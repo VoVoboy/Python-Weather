@@ -1,0 +1,4 @@
+Использованные библиотеки Python:
+1) requests
+2) datetime
+3) pprint

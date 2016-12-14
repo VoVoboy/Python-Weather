@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="tableWeather">
+ <head>
+  <meta charset="utf-8">
+  <title>Пример таблици в Angular.js</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+  <script src="script.js"></script>
+ </head>
+ <body ng-controller="prog">
+  <table>
+   <tr>
+    <th>Date</th>
+    <th>Temperaature max/min</th>
+    <th>Wind</th>
+    <th>Clouds</th>
+    <th>Pressure</th>
+    <th>Describing the weather</th>
+   </tr>
+   <tr ng-repeat="person in persons">
+    <td>{{person.date}}</td>
+    <td>{{person.temperature}}</td>
+    <td>{{person.wind}}</td>
+    <td>{{person.clouds}}</td>
+    <td>{{person.pressure}}</td>
+    <td>{{person.describ}}</td>
+   </tr>
+  </table>
+ </body>
+</html>
